@@ -2,13 +2,30 @@
 <html lang="en">
   {% include head.html %}
   <body>
-      {% include header.html %}
-      <section id="about">
-        {% include about.html %}
-      </section>
-      <section id="projects">
-        {% include projects.html %}
-      </section>
-        {{ content }}
-      {% include footer.html %}
+    {% include header.html %}
+
+    <section id="about">
+      {% include about.html %}
+    </section>
+
+    <section id="projects">
+      {% include projects.html %}
+    </section>
+
+    <section id="blog">
+      <h2>Blog Posts</h2>
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <p>{{ post.date | date_to_string }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    {{ content }}
+
+    {% include footer.html %}
   </body>
+</html>
