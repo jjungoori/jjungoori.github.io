@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
-  <body>
-    {% include header.html %}
-    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/main.css">
-    
-    <section id="about">
-      {% include about.html %}
-    </section>
-    <section id="projects">
-      {% include projects.html %}
-    </section>
-      {{ content }}
-    {% include footer.html %}
+  </head>
+  <body>
+    <article class="post">
+      <header class="post-header">
+          <h1 class="post-title">{{ page.title }}</h1>
+          <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }} {% if page.author %} • {{ page.author }}{% endif %}</p>
+      </header>
+
+      <div class="post-content">
+          {{ content }}
+      </div>
+    </article>
+
+    {% if site.disqus_shortname %}
+        {% include disqus_comments.html %}
+    {% endif %}
   </body>
 </html>
