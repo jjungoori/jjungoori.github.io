@@ -3,6 +3,7 @@ title: A blog by jjungoori
 description: by high school freshmen
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+permalink: /posts/:title/
 
 # User settings
 username: jjungoori
