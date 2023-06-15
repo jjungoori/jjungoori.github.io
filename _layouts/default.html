@@ -13,16 +13,7 @@
     </section>
 
     <section id="blog">
-      <h2>Blog Posts</h2>
-      <ul>
-        {% for post in site.posts %}
-          <li>
-            <a href="/posts/{{ post.title | slugify }}">{{ post.title }}</a>
-            <p>{{ post.date | date_to_string }}</p>
-          </li>
-        {% endfor %}
-
-      </ul>
+      {% include posts.html %}
     </section>
 
     {{ content }}
