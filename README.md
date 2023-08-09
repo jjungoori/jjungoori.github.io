@@ -32,12 +32,12 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://localhost:3000" # the base hostname & protocol for your site
 
 # User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
+username: JJungoori
+user_description: A Student Developer
+user_title: student developer
 email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
+twitter_username: nope
+github_username:  jjungoori
 gplus_username:  lorem_ipsum
 ```
 
