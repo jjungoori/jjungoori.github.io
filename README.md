@@ -1,74 +1,71 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Particle Jekyll Theme
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](./particle.jpg)
 
-## Available Scripts
+This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
 
-In the project directory, you can run:
+The Theme features:
 
-### `npm start`
+- Gulp
+- SASS
+- Sweet Scroll
+- Particle.js
+- BrowserSync
+- Font Awesome and Devicon icons
+- Google Analytics
+- Info Customization
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Basic Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. [Install Jekyll](http://jekyllrb.com)
+2. Clone the particle theme: `git clone https://github.com/nrandecker/particle.git`
+3. Edit `_config.yml` to personalize your site.
 
-### `npm test`
+## Site and User Settings
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You have to fill some informations on `_config.yml` to customize your site.
 
-### `npm run build`
+```
+# Site settings
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:3000" # the base hostname & protocol for your site
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# User settings
+username: Lorem Ipsum
+user_description: Anon Developer at Lorem Ipsum Dolor
+user_title: Anon Developer
+email: anon@anon.com
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Don't forget to change your url before you deploy your site!**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Color and Particle Customization
+- Color Customization
+  - Edit the sass variables
+- Particle Customization
+  - Edit the json data in particle function in app.js
+  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
 
-### `npm run eject`
+## Running the blog in local
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In order to compile the assets and run Jekyll on local you need to follow those steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Install [NodeJS](https://nodejs.org/)
+- Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
+- Install [Yarn](https://yarnpkg.com/): `npm install -g yarn`
+- Install dependencies: `yarn`
+- Run: `gulp`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
 
-## Learn More
+## Credits
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# jjungoori.github.io
->>>>>>> eec2e95c7d5897f3eafbc1a7d2a0991edae4486e
+This theme was partially designed with the inspiration from these fine folks
+- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
+- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
