@@ -35,10 +35,10 @@ url: "http://localhost:3000" # the base hostname & protocol for your site
 username: JJungoori
 user_description: A Student Developer
 user_title: student developer
-email: anon@anon.com
+email: junwoolee@live.co.kr
 twitter_username: nope
 github_username:  jjungoori
-gplus_username:  lorem_ipsum
+gplus_username:  nope
 ```
 
 **Don't forget to change your url before you deploy your site!**
